@@ -1,0 +1,6 @@
+.env
+.env.*
+*.secret
+secrets/
+private/
+credentials.json

@@ -1,0 +1,20 @@
+/* BLOODY / CARMINE */
+* { font-family: "CaskaydiaCove Nerd Font", monospace; font-size: 12px; min-height: 0; border: none; border-radius: 0; }
+window#waybar { background: #101115; color: #e8e4de; border: 1px solid #35353f; border-radius: 6px; }
+#custom-brand { color: #d75b6e; font-weight: bold; padding: 0 14px; letter-spacing: 1px; }
+#workspaces button { color: #89858d; padding: 0 10px; margin: 4px 1px; border-radius: 3px; }
+#workspaces button.active { color: #ffffff; background: #922d40; }
+#workspaces button.urgent { color: #101115; background: #ef8190; }
+#workspaces button:hover { background: #29232b; box-shadow: none; }
+#clock { font-weight: bold; letter-spacing: 2px; padding: 0 14px; }
+#cpu, #memory { color: #aaa5ad; font-size: 11px; padding: 0 6px; }
+#network, #pulseaudio, #tray { padding: 0 10px; }
+#custom-power { color: #d75b6e; padding: 0 10px; }
+#pulseaudio.muted { color: #d75b6e; }
+tooltip { background: #19191f; color: #e8e4de; border: 1px solid #753142; border-radius: 4px; }
+
+#custom-music { color: #d75b6e; padding: 0 8px; }
+#mpris { color: #e8e4de; padding: 0 10px; font-size: 11px; }
+#mpris.paused { color: #aaa5ad; }
+#custom-center { color: #d75b6e; padding: 0 10px; }
+#custom-center:hover { color: #ffffff; background: #29232b; }

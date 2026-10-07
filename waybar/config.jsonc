@@ -1,0 +1,108 @@
+{
+  "include": [
+    "/home/bloody/.local/share/waybar/modules/custom-power.jsonc"
+  ],
+  "layer": "top",
+  "position": "top",
+  "height": 30,
+  "margin-top": 6,
+  "margin-left": 8,
+  "margin-right": 8,
+  "spacing": 6,
+  "reload_style_on_change": true,
+  "modules-left": [
+    "custom/brand",
+    "hyprland/workspaces",
+    "custom/music",
+    "mpris"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "network",
+    "pulseaudio",
+    "custom/center",
+    "custom/power",
+    "tray"
+  ],
+  "custom/brand": {
+    "format": "󰣇  BLOODY",
+    "tooltip": false
+  },
+  "hyprland/workspaces": {
+    "format": "{id}",
+    "on-click": "activate",
+    "all-outputs": false,
+    "persistent-workspaces": {
+      "*": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%a, %d %b  •  %H:%M}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "cpu": {
+    "format": "CPU {usage}%",
+    "interval": 5
+  },
+  "memory": {
+    "format": "RAM {percentage}%",
+    "interval": 5
+  },
+  "network": {
+    "format-ethernet": "󰈀",
+    "format-wifi": "󰖩 {signalStrength}%",
+    "format-disconnected": "󰖪",
+    "tooltip-format": "{ifname} · {ipaddr}"
+  },
+  "pulseaudio": {
+    "format": "󰕾 {volume}%",
+    "format-muted": "󰖁 mute",
+    "on-click": "pavucontrol",
+    "scroll-step": 2
+  },
+  "tray": {
+    "icon-size": 16,
+    "spacing": 10
+  },
+  "custom/center": {
+    "format": "󰒓",
+    "tooltip-format": "Centro de controle Carmine",
+    "on-click": "/home/bloody/.local/share/bloody-desktop/control-center-toggle.sh"
+  },
+  "custom/music": {
+    "format": "󰎆",
+    "tooltip-format": "Abrir controles de música",
+    "on-click": "/home/bloody/.local/share/bloody-desktop/music-toggle.sh"
+  },
+  "mpris": {
+    "format": "{status_icon} {dynamic}",
+    "format-paused": "{status_icon} {dynamic}",
+    "status-icons": {
+      "playing": "▶",
+      "paused": "⏸",
+      "stopped": "■"
+    },
+    "dynamic-order": [
+      "title",
+      "artist"
+    ],
+    "title-len": 24,
+    "artist-len": 16,
+    "dynamic-len": 40,
+    "max-length": 42,
+    "tooltip-format": "{title}\n{artist}\nClique: controles · Botão direito: play/pause",
+    "on-click": "/home/bloody/.local/share/bloody-desktop/music-toggle.sh",
+    "on-click-right": "/home/bloody/.local/share/bloody-desktop/music-toggle.sh playPause"
+  }
+}

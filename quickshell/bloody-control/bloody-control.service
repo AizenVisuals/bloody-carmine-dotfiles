@@ -1,0 +1,12 @@
+[Unit]
+Description=Bloody Carmine Quickshell control center
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/quickshell -p /home/bloody/.config/quickshell/bloody-control
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=graphical-session.target
