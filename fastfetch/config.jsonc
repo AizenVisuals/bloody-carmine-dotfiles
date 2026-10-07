@@ -1,0 +1,89 @@
+{
+  "logo": {
+    "type": "kitty-direct",
+    "source": "$HOME/.local/share/bloody-desktop/raven-flying-sharingan-red-moon.png",
+    "width": 35,
+    "height": 14,
+    "preserveAspectRatio": true,
+    "padding": {
+      "top": 1,
+      "right": 3
+    },
+    "position": "left"
+  },
+  "display": {
+    "separator": "  /  ",
+    "color": {
+      "keys": "#d75b6e",
+      "title": "#e8e4de"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{user-name}@{host-name}"
+    },
+    "separator",
+    {
+      "type": "os",
+      "key": "OS"
+    },
+    {
+      "type": "kernel",
+      "key": "Kernel"
+    },
+    {
+      "type": "packages",
+      "key": "Packages"
+    },
+    {
+      "type": "uptime",
+      "key": "Uptime"
+    },
+    {
+      "type": "wm",
+      "key": "Desktop"
+    },
+    {
+      "type": "display",
+      "key": "Display"
+    },
+    {
+      "type": "terminal",
+      "key": "Terminal"
+    },
+    {
+      "type": "cpu",
+      "key": "CPU"
+    },
+    {
+      "type": "cpuusage",
+      "key": "CPU Usage"
+    },
+    {
+      "type": "gpu",
+      "key": "GPU"
+    },
+    {
+      "type": "memory",
+      "key": "Memory"
+    },
+    {
+      "type": "disk",
+      "key": "Disk"
+    },
+    {
+      "type": "sound",
+      "key": "Sound"
+    },
+    {
+      "type": "processes",
+      "key": "Processes"
+    },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
+  ]
+}

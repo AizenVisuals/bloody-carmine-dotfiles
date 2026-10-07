@@ -1,0 +1,103 @@
+configuration {
+    modi: "drun,run,window";
+    font: "JetBrainsMono Nerd Font 11";
+    show-icons: true;
+    terminal: "kitty";
+    drun-display-format: "{name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: " 󰣇 Apps ";
+}
+
+@theme "/dev/null"
+
+* {
+    bg-col:  #101115;
+    bg-col-light: #222129;
+    fg-col: #e8e4de;
+    accent-col: #be354b;
+    border-col: #be354b;
+    border-col-light: #753142;
+    
+    background-color: @bg-col;
+    text-color: @fg-col;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    background-color: @bg-col;
+    location: center;
+    anchor: center;
+    width: 500px;
+    border: 1px;
+    border-color: @border-col;
+    border-radius: 6px;
+}
+
+mainbox {
+    background-color: @bg-col;
+    children: [ inputbar, listview ];
+    spacing: 10px;
+    padding: 20px;
+}
+
+inputbar {
+    children: [ prompt, entry ];
+    background-color: @bg-col-light;
+    border-radius: 8px;
+    padding: 10px;
+    spacing: 10px;
+}
+
+prompt {
+    background-color: @bg-col-light;
+    text-color: @accent-col;
+    border-radius: 8px;
+    padding: 0 10px 0 0;
+}
+
+entry {
+    background-color: @bg-col-light;
+    text-color: @fg-col;
+    border-radius: 8px;
+    padding: 0 0 0 10px;
+    placeholder: "Search...";
+    placeholder-color: #585B70;
+}
+
+listview {
+    background-color: @bg-col;
+    columns: 1;
+    lines: 8;
+    spacing: 5px;
+    border-radius: 8px;
+}
+
+element {
+    background-color: @bg-col;
+    text-color: @fg-col;
+    border-radius: 8px;
+    padding: 8px;
+    spacing: 10px;
+}
+
+element selected {
+    background-color: @accent-col;
+    text-color: #ffffff;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    background-color: inherit;
+    text-color: inherit;
+    size: 24px;
+    vertical-align: 0.5;
+}

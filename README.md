@@ -1,24 +1,49 @@
-# Bloody Carmine — dotfiles locais
+# Bloody Carmine · Arch Linux + Hyprland
 
-Recorte organizado da configuração atual para revisão e eventual compartilhamento. **Este diretório é local; nada foi publicado ou enviado a um remoto.**
+Meus dotfiles ativos para um desktop Arch Linux com Hyprland/HyDE, paleta grafite e carmim, Waybar personalizada, Rofi, Kitty e centro de controle Quickshell.
 
-## Conteúdo
+![Captura do desktop](showcase/SHOWCASE-board.png)
 
-- Waybar Carmine e painel Quickshell de controles rápidos.
-- Estilos do wlogout e rascunho de tema SwayNC.
-- Ajustes GTK, paletas Qt/Kvantum, Rofi e Kitty.
+> O setup original foi montado sobre HyDE. Os arquivos aqui registram a camada pessoal, não substituem nem redistribuem o HyDE. Leia `docs/CONFIGURACAO.md` antes de aplicar em outra máquina.
 
-## Antes de instalar em outra máquina
+## Stack
 
-1. Confira as dependências: Hyprland, Waybar, Quickshell, Dunst, wlogout, Rofi, GTK, qt5ct/qt6ct e Kvantum; os botões de áudio/rede/Bluetooth chamam pavucontrol, nm-connection-editor e blueman-manager.
-2. Substitua caminhos pessoais /home/bloody e confira módulos externos do HyDE antes de copiar os arquivos.
-3. Instale fontes e ícones compatíveis com os nomes configurados ou troque-os pelos disponíveis no destino.
-4. O SwayNC está apenas tematizado aqui; a sessão atual continua usando Dunst, pois ambos disputam o serviço D-Bus de notificações.
-5. O wallpaper e arquivos de bloqueio foram excluídos intencionalmente; configure os caminhos e valide o Hyprlock antes de ativá-los.
-6. Verifique as licenças originais dos temas GTK/Kvantum e dos arquivos derivados antes de redistribuí-los.
+- Arch Linux · Hyprland (configuração Lua) · HyDE
+- Waybar · Rofi · Kitty · Quickshell · Cava · Fastfetch
+- Dunst · wlogout · GTK 3/4 · Qt5ct/Qt6ct · Kvantum
+- Tema: Bloody Carmine · fundo grafite `#101115` · acento `#d75b6e`
 
-## Atalhos
+## O que está incluído
 
-O ícone de engrenagem na Waybar abre o centro de controle Carmine. A janela oferece áudio, conexões, Bluetooth, alternância de Não Perturbe, recuperação da notificação dispensada mais recente e o menu existente de energia/sessão.
+- `hypr/`: camada pessoal Hyprland/Lua e idle/lock; integra com HyDE já instalado.
+- `waybar/`: layout Carmine escolhido e CSS personalizado.
+- `quickshell/`: centro de controle rápido.
+- `kitty/`, `rofi/`, `fastfetch/`, `cava/`: aparência e identidade do terminal.
+- `spicetify/visualizer/`: Spicetify Visualizer, pin upstream registrado em `spicetify/README.md`.
+- `gtk/`, `qt/`, `kvantum/`, `wlogout/`: detalhes de tema desktop.
+- `wallpaper/`: papel de parede usado neste tema.
+- `showcase/`: imagens para a publicação.
 
-A paleta GTK vem da cópia Bloody-Carmine do Graphite-Mono incluída em gtk-theme/Bloody-Carmine. Os arquivos de cor qt5ct/qt6ct estão nomeados wallbash.conf para corresponder às configurações incluídas. Essa seleção conserva caminhos locais em alguns arquivos; adapte antes de instalar fora desta máquina.
+O serviço de notificações ativo é o Dunst. SwayNC fica fora do conjunto ativo porque disputa o nome D-Bus de notificações com Dunst. Alguns módulos de energia e as ações de Waybar usam comandos fornecidos pelo HyDE.
+
+## Instalação
+
+Instale Arch Linux, Hyprland e HyDE primeiro. Confira as dependências, backup e limitações em [`docs/CONFIGURACAO.md`](docs/CONFIGURACAO.md). Depois:
+
+```bash
+git clone https://github.com/AizenVisuals/bloody-carmine-dotfiles.git
+cd bloody-carmine-dotfiles
+./install.sh
+```
+
+O instalador cria backups datados dos caminhos que serão substituídos, copia os dotfiles e instala o serviço de usuário Quickshell desabilitado. Revise o arquivo copiado `~/.config/quickshell/bloody-control/bloody-control.service` e habilite com `systemctl --user enable --now bloody-control.service` quando estiver pronto.
+
+O script não instala pacotes, não muda o tema GTK/Qt do sistema e não substitui a configuração base do HyDE. O wallpaper também é colocado em `~/.local/share/bloody-desktop/` para o Fastfetch. GTK usa o tema incluso via `gtk.css`; selecione `Bloody-Carmine` em seu gerenciador de aparência para aplicar os controles GTK.
+
+## Showcase
+
+As capturas estão em [`showcase/`](showcase/). O monitor ao vivo e as vistas de painel vêm de capturas do setup; veja `showcase/README.md` para contexto e ordem sugerida de postagem.
+
+## Licenças e créditos
+
+Este repositório reúne configuração pessoal, assets originais e arquivos derivados. Veja [`THIRD_PARTY.md`](THIRD_PARTY.md) antes de redistribuir. O arquivo `kitty/bloody.conf` conserva os créditos MIT do tema Catppuccin. A arte do wallpaper foi gerada para este desktop.

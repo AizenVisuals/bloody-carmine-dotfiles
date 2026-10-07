@@ -1,0 +1,9 @@
+{
+  "custom/power": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Abrir menu de sessão do HyDE",
+    "on-click": "hyde-shell logoutlaunch 1",
+    "interval": 86400
+  }
+}

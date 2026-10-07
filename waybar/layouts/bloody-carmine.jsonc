@@ -1,6 +1,6 @@
 {
   "include": [
-    "/home/bloody/.local/share/waybar/modules/custom-power.jsonc"
+    "$HOME/.local/share/waybar/modules/custom-power.jsonc"
   ],
   "layer": "top",
   "position": "top",
@@ -78,12 +78,12 @@
   "custom/center": {
     "format": "󰒓",
     "tooltip-format": "Centro de controle Carmine",
-    "on-click": "/home/bloody/.local/share/bloody-desktop/control-center-toggle.sh"
+    "on-click": "$HOME/.local/share/bloody-desktop/control-center-toggle.sh"
   },
   "custom/music": {
     "format": "󰎆",
     "tooltip-format": "Abrir controles de música",
-    "on-click": "/home/bloody/.local/share/bloody-desktop/music-toggle.sh"
+    "on-click": "$HOME/.local/share/bloody-desktop/music-toggle.sh"
   },
   "mpris": {
     "format": "{status_icon} {dynamic}",
@@ -102,7 +102,7 @@
     "dynamic-len": 40,
     "max-length": 42,
     "tooltip-format": "{title}\n{artist}\nClique: controles · Botão direito: play/pause",
-    "on-click": "/home/bloody/.local/share/bloody-desktop/music-toggle.sh",
-    "on-click-right": "/home/bloody/.local/share/bloody-desktop/music-toggle.sh playPause"
+    "on-click": "$HOME/.local/share/bloody-desktop/music-toggle.sh",
+    "on-click-right": "$HOME/.local/share/bloody-desktop/music-toggle.sh playPause"
   }
 }

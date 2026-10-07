@@ -4,3 +4,7 @@
 secrets/
 private/
 credentials.json
+*.bak
+*.backup
+*.swp
+*.tmp

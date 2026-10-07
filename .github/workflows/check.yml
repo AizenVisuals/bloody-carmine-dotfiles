@@ -1,0 +1,14 @@
+name: Check
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  dotfiles:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check installer syntax
+        run: bash -n install.sh
+      - name: Check for personal home paths
+        run: '! grep -R -n --exclude-dir=.git "/home/bloody" .'

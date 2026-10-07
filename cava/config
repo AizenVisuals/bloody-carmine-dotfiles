@@ -1,0 +1,22 @@
+[general]
+autosens = 0
+sensitivity = 48
+framerate = 40
+
+[smoothing]
+noise_reduction = 88
+
+# Bloody / Carmine — dark red base to warm rose highlights
+[color]
+background = 'default'
+foreground = '#be354b'
+gradient = 1
+gradient_count = 8
+gradient_color_1 = '#641d31'
+gradient_color_2 = '#81243a'
+gradient_color_3 = '#a12e43'
+gradient_color_4 = '#be354b'
+gradient_color_5 = '#d84a60'
+gradient_color_6 = '#e76879'
+gradient_color_7 = '#f18b96'
+gradient_color_8 = '#f7b1b8'
