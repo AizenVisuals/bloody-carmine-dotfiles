@@ -37,6 +37,6 @@ Para desfazer, restaure o backup mais recente de `~/.local/state/bloody-carmine-
 - Arch Linux x86_64, Hyprland em Wayland, HyDE com Lua, monitor 1920×1080.
 - Waybar usa módulos externos de energia do HyDE.
 - O controle de mídia conversa via MPRIS com `playerctl`; o centro de controle abre pavucontrol e ferramentas de rede/Bluetooth.
-- Dunst é o daemon de notificações ativo. A pasta `swaync/` existente no repositório é apenas um tema inativo e não é instalada.
+- Dunst é o daemon de notificações ativo.
 - O papel de parede nesta captura é gerido também por scripts do tema local; verifique a integração no destino. O instalador coloca a imagem em `~/Pictures/wallpapers/bloody-carmine.png` e `~/.local/share/bloody-desktop/`.
 - SDDM e Hyprlock contêm configuração local com limites conhecidos; não são instalados por este script.

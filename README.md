@@ -42,7 +42,7 @@ O script não instala pacotes, não muda o tema GTK/Qt do sistema e não substit
 
 ## Showcase
 
-As capturas estão em [`showcase/`](showcase/). O monitor ao vivo e as vistas de painel vêm de capturas do setup; veja `showcase/README.md` para contexto e ordem sugerida de postagem.
+As capturas adicionais do setup estão em [`showcase/`](showcase/).
 
 ## Licenças e créditos
 
