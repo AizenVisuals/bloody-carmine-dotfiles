@@ -8,9 +8,8 @@ As outras capturas da sequência foram feitas com `grim` nesta sessão. Foram re
 
 1. `13-workspace-3-focus.png` — composição principal do workspace 3.
 2. `04-fastfetch-terminal.png` — Kitty + Fastfetch.
-3. `06-terminal-cava.png` — Cava em execução.
-4. `07-launcher-rofi.png` ou `12-rofi-live.png` — launcher.
-5. `08-control-center.png` — painel Quickshell.
-6. `09-music-panel.png` — painel de música.
+3. `12-rofi-live.png` — launcher.
+4. `08-control-center.png` — painel Quickshell.
+5. `09-music-panel.png` — painel de música.
 
 As imagens da tela Spotify mostram visualização de áudio, mas não confirmam que a Custom App Visualizer do Spicetify esteja aberta. Evite afirmar que essa integração está ativa até verificar a rota na janela do Spotify.
